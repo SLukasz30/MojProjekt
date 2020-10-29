@@ -1,0 +1,147 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container * 
+{
+padding:0.6em;
+font-size: 1.1em;    
+
+}
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container>header
+{
+    padding-top:0;
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+    
+}
+.container>header>h1
+{
+    background-color: black;
+    color:white;
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+    font-size: 1.6em;
+    padding: 0.9em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+.container>nav
+{
+    flex-basis: 100%;
+}
+.container>nav>ul
+{
+list-style-type: none;
+display:flex;
+justify-content: space-between;
+width:50%;
+margin:auto;
+}
+.container>nav>ul>li
+{
+    flex-basis: 24%;
+}
+nav
+{
+    position: sticky;
+    top:-2em;
+    
+}
+.container>nav>ul>li>a
+{
+    text-decoration: none;
+    display:block;
+    color:white;
+    padding:1em;
+    background-color: black;
+    border-radius: 1em;
+    text-align: center;
+}
+.container>nav>ul>li>a:hover
+{
+    transition: 0.35s;
+    color:black;
+    background-color: white;
+
+}
+.container>main
+{
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container>aside
+{
+    flex-basis: 25%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.container>aside>article
+{
+    background-color: black;
+    color:white;
+    border-radius: 1em;
+    flex-basis: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+
+}
+.container>main>article
+{
+    background-color: black;
+    margin:1em 0;
+    color:white;
+    border-radius: 1em;
+    flex-basis: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container>main>article:nth-last-of-type(1),main>article:nth-last-of-type(5)
+{
+    flex-basis: 100%;
+}
+
+.container>footer
+{
+    margin:0;
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.container>footer>span
+{
+    flex-basis: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 1.2em;
+    color:white;
+    padding:1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+}
